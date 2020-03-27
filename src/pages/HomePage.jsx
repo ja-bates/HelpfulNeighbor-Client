@@ -149,7 +149,7 @@ const HomePage = () => {
                     Whether it be groceries, picking up prescriptions or any other errand, please do not hesitate to reach out; we will be more than happy to help! 
                     </S.TextParagraph>
                     <S.TextParagraphBold>
-                    Call or text the number below with a description of the errand you need. We will coordinate an estimated delivery time with a deliverer and notify you as soon as we can. If payment is needed (ex. groceries), this can be made via cash, cheque or e-transfer to the deliverer. 
+                    Call or text the number below with a description of the errand you need. We will coordinate an estimated delivery time with a deliverer and notify you as soon as we can. If payment is needed (ex. groceries), this can be made via cash or e-transfer to the deliverer. 
                     </S.TextParagraphBold>
                     
                 </S.Text>
