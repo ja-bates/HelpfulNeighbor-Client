@@ -32,17 +32,17 @@ S.Button = styled.button`
     
     height: auto;
     width: auto;
-    padding: 2vw;
+    padding: 1.2vmax;
 
     font-family: Poppins;
     font-weight: 300;
-    font-size: 1.5em;
+    font-size: calc(15px + 0.8vmax);
     color: grey;
     text-align: center;
     background-color: white;
     border-color: #0003FF;
     border-width: thin;
-    border-radius: 10px;
+    border-radius: 15px;
     outline: none;
     text-decoration: none;
 
