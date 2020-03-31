@@ -14,8 +14,8 @@ S.page = styled.div`
 
 S.SmallLogo = styled.img` 
     // position: fixed;
-    height: 12vh;
-   
+    height: calc(30px + 5vmax);
+    margin-left: 2vmin;
 `;
 
 S.SmallLogoContainer = styled.div`
@@ -27,13 +27,13 @@ S.Nav = styled.div`
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-bottom: 1vh;
-    padding-right: 4vh;
+    padding-bottom: 1vmin;
+    padding-right: 4vmin;
 `;
 
 S.NavItem = styled.div`
-    font-family: Poppins, sans-serif;
-    font-size: 1.2em;
+    font-family: Poppins;
+    font-size: calc(12px + 0.3vmax);
     color: #0003FF;
     text-align: center;
     padding-left: 2vw;
@@ -46,12 +46,16 @@ S.NavItem = styled.div`
 `;
 
 S.Top = styled.div`
-    height: 12vh;
+    position: fixed;
+    top: 0;
+    height: calc(30px + 5vmax);
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 3vh;
+    padding: 2vmax;
+    overflow: hidden;
+    background: #FFFFFF;
 `;
 
 S.Content = styled.div`
@@ -60,26 +64,28 @@ S.Content = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin-top: calc(50px + 10vmax);
+    margin-bottom: 10vh;
+    overflow: scroll;
 `;
 
 S.AboutImage = styled.img`
-    width: 50%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
 `;
 
 S.AboutImageContainer = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 100%;
-
+    display: block;
+    margin-top: 2%;
+    margin-bottom: 2%;
 `;
 
 S.Title = styled.div`
     
     font-family: Poppins;
     font-weight: 600;
-    font-size: 2em;
+    font-size: calc(15px + 0.8vmax);
     color: #0003FF;
     text-align: center;
     margin-left: 25%;
@@ -92,16 +98,40 @@ S.Text = styled.div`
     display: block;
 
     font-family: Poppins;
-    font-size: 1.2em;
+    font-size: calc(12px + 0.3vmax);
     color: #000000;
-    margin-left: 25%;
-    margin-right: 25%;
-    // margin-top: 2%;
+    // text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
     margin-bottom: 2%;
 `;
 
 S.TextParagraph = styled.p`
     font-weight: 300;
+`;
+
+S.TextParagraphCenter = styled.p`
+    text-align: center;
+`;
+
+S.Slogan = styled.img`
+    height: 6vh;
+    width: auto;
+`;
+
+S.SloganContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 10vh;
+
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    background: #FFFFFF;
 `;
 
 const AboutPage = () => {
@@ -116,12 +146,14 @@ const AboutPage = () => {
                 </S.SmallLogoContainer>
                 <S.Nav>
                     <S.NavItem as="a" href="/home">Home</S.NavItem>
+                    <S.NavItem as="a" href="/info">How It Works</S.NavItem>
                     <S.NavItem as="a" href="/about">About Us</S.NavItem>
                     <S.NavItem as="a" href="/volunteer">Volunteer</S.NavItem>
                 </S.Nav>
             </S.Top>
 
             <S.Content>
+
                 <S.Title>
                     About Us
                 </S.Title>
@@ -131,9 +163,40 @@ const AboutPage = () => {
                     </S.TextParagraph>
                       
                 </S.Text>
+
                 <S.AboutImageContainer>
                     <S.AboutImage src="https://user-images.githubusercontent.com/46095808/77294701-f5f17d00-6ca1-11ea-988c-69ffe2ea98c3.jpg" />
                 </S.AboutImageContainer>
+
+                <S.Title>
+                    Media
+                </S.Title>
+                <S.Text>
+                    <S.TextParagraphCenter>
+                        Check us out on the media!
+                    </S.TextParagraphCenter>
+                    <S.TextParagraph>
+                        <b>CFJC Today</b> <i>March 30, 2020</i> :
+                    </S.TextParagraph>
+                    <S.TextParagraph>
+                        <a href="https://cfjctoday.com/2020/03/30/pair-of-university-students-from-kamloops-here-to-help-during-pandemic/?fbclid=IwAR3Om0Oq8LMWreH5OBDxPKw-iI0bBJgC9NCDVq0fDe_tWGMKwCNP31xLl1I">
+                            Pair of university students from Kamloops here to help during pandemic
+                        </a>
+                    </S.TextParagraph>
+                    <S.TextParagraph>
+                        <b>Kamloops Matters</b> <i>March 29, 2020</i> :
+                    </S.TextParagraph>
+                    <S.TextParagraph>
+                        <a href="https://www.castanetkamloops.net/edition/news-story-295793-48-.htm?fbclid=IwAR0PcRtuLt3QZVxGiHSgGoUTcl9hZjzCjBrskGAdWK1484BJMMhyvGZ3V_c#295793">
+                            Students create online platform to help their Kamloops neighbours
+                        </a>
+                    </S.TextParagraph>
+                </S.Text>
+
+                <S.SloganContainer>
+                    <S.Slogan src="https://user-images.githubusercontent.com/46095809/77281747-24ad2a80-6c85-11ea-9cd1-52aa728c3fe6.png" />
+                </S.SloganContainer>
+
             </S.Content>
             
         </S.page>

@@ -13,8 +13,8 @@ S.page = styled.div`
 
 S.SmallLogo = styled.img` 
     // position: fixed;
-    height: 12vh;
-   
+    height: calc(30px + 5vmax);
+    margin-left: 2vmin;
 `;
 
 S.SmallLogoContainer = styled.div`
@@ -26,13 +26,13 @@ S.Nav = styled.div`
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-bottom: 1vh;
-    padding-right: 4vh;
+    padding-bottom: 1vmin;
+    padding-right: 4vmin;
 `;
 
 S.NavItem = styled.div`
-    font-family: Poppins, sans-serif;
-    font-size: 1.2em;
+    font-family: Poppins;
+    font-size: calc(12px + 0.3vmax);
     color: #0003FF;
     text-align: center;
     padding-left: 2vw;
@@ -45,12 +45,16 @@ S.NavItem = styled.div`
 `;
 
 S.Top = styled.div`
-    height: 12vh;
+    position: fixed;
+    top: 0;
+    height: calc(30px + 5vmax);
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 3vh;
+    padding: 2vmax;
+    overflow: hidden;
+    background: #FFFFFF;
 `;
 
 S.Content = styled.div`
@@ -59,17 +63,20 @@ S.Content = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin-top: calc(50px + 10vmax);
+    margin-bottom: 10vh;
+    overflow: scroll;
 `;
 
 S.Text = styled.div`
     display: block;
 
     font-family: Poppins;
-    font-size: 1.2em;
+    font-size: calc(12px + 0.3vmax);
     color: #000000;
     // text-align: center;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 2%;
     margin-bottom: 2%;
 `;
@@ -98,14 +105,22 @@ S.TextParagraphBold = styled.p`
 
 
 S.Slogan = styled.img`
-    height: auto;
-    width: 30vh;
+    height: 6vh;
+    width: auto;
 `;
 
 S.SloganContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    width: 100%;
+    height: 10vh;
+
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    background: #FFFFFF;
 `;
 
 S.PhoneContainer = styled.div`
@@ -124,6 +139,7 @@ const HomePage = () => {
                 </S.SmallLogoContainer>
                 <S.Nav>
                     <S.NavItem as="a" href="/home">Home</S.NavItem>
+                    <S.NavItem as="a" href="/info">How It Works</S.NavItem>
                     <S.NavItem as="a" href="/about">About Us</S.NavItem>
                     <S.NavItem as="a" href="/volunteer">Volunteer</S.NavItem>
                 </S.Nav>

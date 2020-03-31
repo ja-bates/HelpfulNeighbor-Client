@@ -5,6 +5,7 @@ import LandingPage from "./pages/LandingPage";
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import VolunteerPage from './pages/VoluteerPage';
+import InfoPage from './pages/InfoPage';
 
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
         <div>
           <Route exact path="/" component={LandingPage} />
           <Route path="/home" component={HomePage} />
+          <Route path="/info" component={InfoPage} />
           <Route path="/about" component={AboutPage} />
           <Route path="/volunteer" component={VolunteerPage} />
         </div>

@@ -88,13 +88,12 @@ S.Text = styled.div`
     font-family: Poppins;
     font-size: calc(12px + 0.3vmax);
     color: #000000;
-    text-align: center;
+    // text-align: center;
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 2%;
     margin-bottom: 2%;
 `;
-
 
 S.TextParagraph = styled.p`
     font-weight: 300;
@@ -111,8 +110,8 @@ S.Contact = styled.div`
     font-size: 1.5em;
     color: #0003FF;
     text-align: center;
-    // margin-left: 25%;
-    // margin-right: 25%;
+    margin-left: 25%;
+    margin-right: 25%;
     margin-top: 2%;
     margin-bottom: 1%;
 `;
@@ -136,12 +135,7 @@ S.SloganContainer = styled.div`
     background: #FFFFFF;
 `;
 
-S.WhiteSpace = styled.div`
-    background: #FFFFFF;
-    color: #FFFFFF;
-`;
-
-const VolunteerPage = () => {
+const InfoPage = () => {
     
     return (
         <S.page>
@@ -161,38 +155,36 @@ const VolunteerPage = () => {
 
             <S.Content>
                 <S.Title>
-                    Volunteer
+                    How It Works
                 </S.Title>
                 <S.Text>
-                    <S.TextParagraphBold>
-                        Want to help out? 
-                    </S.TextParagraphBold>
                     <S.TextParagraph>
-                        Please send us an email, and we will reach out with more information!
+                        Give us a call or text at <b>250-819-3712</b> with your name, address, and order. We will connect you to a driver who will coordinate the time of delivery with you.
+                    </S.TextParagraph>
+                    <S.TextParagraph>
+                        Once the driver has purchased your order, they will notify you of the total cost. Please e-transfer the amount to <b>hnkamloops@gmail.com</b>
+                    </S.TextParagraph>
+                    <S.TextParagraph>
+                        Following confirmation that the transaction is complete, the driver will deliver your order!
+                    </S.TextParagraph> 
+                </S.Text>
+
+                <S.Title>
+                    Hours of Operation
+                </S.Title>
+                <S.Text>
+                    <S.TextParagraph>
+                        We are open <b>10am - 5pm</b>, every day of the week.
+                    </S.TextParagraph>
+                    <S.TextParagraph>
+                    If you have a request outside these hours, please leave a voicemail and we will get back to you the next day.
                     </S.TextParagraph>
                 </S.Text>
-                <S.Contact as="a" href="mailto:hnkamloops@gmail.com">
-                    hnkamloops@gmail.com
-                </S.Contact>
 
                 <S.SloganContainer>
                     <S.Slogan src="https://user-images.githubusercontent.com/46095809/77281747-24ad2a80-6c85-11ea-9cd1-52aa728c3fe6.png" />
                 </S.SloganContainer>
-
-                <S.Text>
-                    <S.WhiteSpace>
-                        <S.TextParagraph>
-                            Please send us an email, and we will reach out with more information!
-                        </S.TextParagraph>
-                        <S.TextParagraph>
-                            Please send us an email, and we will reach out with more information!
-                        </S.TextParagraph>
-                        <S.TextParagraph>
-                            Please send us an email, and we will reach out with more information!
-                        </S.TextParagraph>   
-                    </S.WhiteSpace>
-                </S.Text>
-
+                    
             </S.Content>
             
         </S.page>
@@ -201,4 +193,4 @@ const VolunteerPage = () => {
     
 };
 
-export default VolunteerPage;
+export default InfoPage;
