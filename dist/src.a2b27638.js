@@ -35255,7 +35255,7 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject6() {
-  var data = (0, _taggedTemplateLiteral2.default)(["\n    display: flex;\n    flex-direction: row;\n\n"]);
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    display: flex;\n    flex-direction: row;\n    margin-bottom: 10vmax;\n"]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -35275,7 +35275,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = (0, _taggedTemplateLiteral2.default)(["\n    \n    height: (50px + 0.8vmax);\n    width: calc(175px + 0.8vmax);\n    padding: 1.2vmax;\n\n    font-family: Poppins;\n    font-weight: 300;\n    font-size: calc(15px + 0.8vmax);\n    color: grey;\n    text-align: center;\n    background-color: white;\n    border-color: #0003FF;\n    border-width: thin;\n    border-radius: 15px;\n    outline: none;\n    text-decoration: none;\n\n    &:hover {\n        color: #0003FF;\n        transform: scale(1.05);\n    }\n"]);
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    \n    height: calc(50px + 0.8vh);\n    width: calc(150px + 4vw);\n    // padding: 1.2vmax;\n\n    font-family: Poppins;\n    font-weight: 300;\n    font-size: calc(15px + 0.8vw);\n    color: grey;\n    text-align: center;\n    background-color: white;\n    border-color: #0003FF;\n    border-width: thin;\n    border-radius: 15px;\n    outline: none;\n    text-decoration: none;\n\n    &:hover {\n        color: #0003FF;\n        transform: scale(1.05);\n    }\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -35295,7 +35295,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = (0, _taggedTemplateLiteral2.default)([" \n    // position: fixed;\n    height: 50vh;\n    width; auto;\n   \n"]);
+  var data = (0, _taggedTemplateLiteral2.default)([" \n    // position: fixed;\n    height: 70vmin;\n    width; auto;\n   \n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -37119,7 +37119,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51893" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52004" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

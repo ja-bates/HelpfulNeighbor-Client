@@ -14,7 +14,7 @@ S.page = styled.div`
 
 S.Logo = styled.img` 
     // position: fixed;
-    height: 50vh;
+    height: 70vmin;
     width; auto;
    
 `;
@@ -30,13 +30,13 @@ S.LogoContainer = styled.div`
 
 S.Button = styled.button`
     
-    height: (50px + 0.8vmax);
-    width: calc(175px + 0.8vmax);
-    padding: 1.2vmax;
+    height: calc(50px + 0.8vh);
+    width: calc(150px + 4vw);
+    // padding: 1.2vmax;
 
     font-family: Poppins;
     font-weight: 300;
-    font-size: calc(15px + 0.8vmax);
+    font-size: calc(15px + 0.8vw);
     color: grey;
     text-align: center;
     background-color: white;
@@ -59,7 +59,7 @@ S.ButtonContainer = styled.div`
 S.Select = styled.div`
     display: flex;
     flex-direction: row;
-
+    margin-bottom: 10vmax;
 `;
 
 
