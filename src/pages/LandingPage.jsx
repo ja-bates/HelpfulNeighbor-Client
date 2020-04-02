@@ -30,8 +30,8 @@ S.LogoContainer = styled.div`
 
 S.Button = styled.button`
     
-    height: auto;
-    width: auto;
+    height: (50px + 0.8vmax);
+    width: calc(175px + 0.8vmax);
     padding: 1.2vmax;
 
     font-family: Poppins;
@@ -53,6 +53,12 @@ S.Button = styled.button`
 `;
 
 S.ButtonContainer = styled.div`
+    margin: 2vw;
+`;
+
+S.Select = styled.div`
+    display: flex;
+    flex-direction: row;
 
 `;
 
@@ -67,9 +73,14 @@ const LandingPage = () => {
                 <S.Logo src="https://user-images.githubusercontent.com/46095809/77264774-51971880-6c58-11ea-854e-a432342d1075.png" />
 
             </S.LogoContainer>
-            <S.ButtonContainer as="a" href="/home">
-                <S.Button>Get Started</S.Button>           
-            </S.ButtonContainer>
+            <S.Select>
+                <S.ButtonContainer as="a" href="/kamloops/home">
+                    <S.Button>Kamloops ></S.Button>           
+                </S.ButtonContainer>
+                <S.ButtonContainer as="a" href="/calgary/home">
+                    <S.Button>Calgary ></S.Button>           
+                </S.ButtonContainer>
+            </S.Select>
         </S.page>
     );
     

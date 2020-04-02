@@ -35254,8 +35254,18 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _templateObject6() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    display: flex;\n    flex-direction: row;\n\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject5() {
-  var data = (0, _taggedTemplateLiteral2.default)(["\n\n"]);
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    margin: 2vw;\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -35265,7 +35275,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = (0, _taggedTemplateLiteral2.default)(["\n    \n    height: auto;\n    width: auto;\n    padding: 1.2vmax;\n\n    font-family: Poppins;\n    font-weight: 300;\n    font-size: calc(15px + 0.8vmax);\n    color: grey;\n    text-align: center;\n    background-color: white;\n    border-color: #0003FF;\n    border-width: thin;\n    border-radius: 15px;\n    outline: none;\n    text-decoration: none;\n\n    &:hover {\n        color: #0003FF;\n        transform: scale(1.05);\n    }\n"]);
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    \n    height: (50px + 0.8vmax);\n    width: calc(175px + 0.8vmax);\n    padding: 1.2vmax;\n\n    font-family: Poppins;\n    font-weight: 300;\n    font-size: calc(15px + 0.8vmax);\n    color: grey;\n    text-align: center;\n    background-color: white;\n    border-color: #0003FF;\n    border-width: thin;\n    border-radius: 15px;\n    outline: none;\n    text-decoration: none;\n\n    &:hover {\n        color: #0003FF;\n        transform: scale(1.05);\n    }\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -35310,19 +35320,23 @@ S.Logo = _styledComponents.default.img(_templateObject2());
 S.LogoContainer = _styledComponents.default.div(_templateObject3());
 S.Button = _styledComponents.default.button(_templateObject4());
 S.ButtonContainer = _styledComponents.default.div(_templateObject5());
+S.Select = _styledComponents.default.div(_templateObject6());
 
 var LandingPage = function LandingPage() {
   return /*#__PURE__*/_react.default.createElement(S.page, null, /*#__PURE__*/_react.default.createElement(S.LogoContainer, null, /*#__PURE__*/_react.default.createElement(S.Logo, {
     src: "https://user-images.githubusercontent.com/46095809/77264774-51971880-6c58-11ea-854e-a432342d1075.png"
-  })), /*#__PURE__*/_react.default.createElement(S.ButtonContainer, {
+  })), /*#__PURE__*/_react.default.createElement(S.Select, null, /*#__PURE__*/_react.default.createElement(S.ButtonContainer, {
     as: "a",
-    href: "/home"
-  }, /*#__PURE__*/_react.default.createElement(S.Button, null, "Get Started")));
+    href: "/kamloops/home"
+  }, /*#__PURE__*/_react.default.createElement(S.Button, null, "Kamloops >")), /*#__PURE__*/_react.default.createElement(S.ButtonContainer, {
+    as: "a",
+    href: "/calgary/home"
+  }, /*#__PURE__*/_react.default.createElement(S.Button, null, "Calgary >"))));
 };
 
 var _default = LandingPage;
 exports.default = _default;
-},{"@babel/runtime/helpers/taggedTemplateLiteral":"node_modules/@babel/runtime/helpers/taggedTemplateLiteral.js","react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/pages/HomePage.jsx":[function(require,module,exports) {
+},{"@babel/runtime/helpers/taggedTemplateLiteral":"node_modules/@babel/runtime/helpers/taggedTemplateLiteral.js","react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/pages/Kamloops/HomePage.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35494,7 +35508,7 @@ S.Slogan = _styledComponents.default.img(_templateObject12());
 S.SloganContainer = _styledComponents.default.div(_templateObject13());
 S.PhoneContainer = _styledComponents.default.div(_templateObject14());
 
-var HomePage = function HomePage() {
+var KHomePage = function KHomePage() {
   return /*#__PURE__*/_react.default.createElement(S.page, null, /*#__PURE__*/_react.default.createElement(S.Top, null, /*#__PURE__*/_react.default.createElement(S.SmallLogoContainer, {
     as: "a",
     href: "/"
@@ -35502,16 +35516,16 @@ var HomePage = function HomePage() {
     src: "https://user-images.githubusercontent.com/46095809/77265982-7640bf80-6c5b-11ea-8286-c3d85e85f33f.png"
   })), /*#__PURE__*/_react.default.createElement(S.Nav, null, /*#__PURE__*/_react.default.createElement(S.NavItem, {
     as: "a",
-    href: "/home"
+    href: "/kamloops/home"
   }, "Home"), /*#__PURE__*/_react.default.createElement(S.NavItem, {
     as: "a",
-    href: "/info"
+    href: "/kamloops/info"
   }, "How It Works"), /*#__PURE__*/_react.default.createElement(S.NavItem, {
     as: "a",
-    href: "/about"
+    href: "/kamloops/about"
   }, "About Us"), /*#__PURE__*/_react.default.createElement(S.NavItem, {
     as: "a",
-    href: "/volunteer"
+    href: "/kamloops/volunteer"
   }, "Volunteer"))), /*#__PURE__*/_react.default.createElement(S.Content, null, /*#__PURE__*/_react.default.createElement(S.Text, null, /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "Hello, welcome to Helpful Neighbor!"), /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "We are a community of young people wanting to lend a helping hand in our community during these tough times of the COVID-19 pandemic."), /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "We want to offer our volunteer services to those in need - especially the senior community, those with underlying conditions, or anyone who may not feel comfortable leaving their home at this time."), /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "Whether it be groceries, picking up prescriptions or any other errand, please do not hesitate to reach out; we will be more than happy to help!"), /*#__PURE__*/_react.default.createElement(S.TextParagraphBold, null, "Call or text the number below with a description of the errand you need. We will coordinate an estimated delivery time with a deliverer and notify you as soon as we can. If payment is needed (ex. groceries), this can be made via cash or e-transfer to the deliverer.")), /*#__PURE__*/_react.default.createElement(S.PhoneContainer, {
     as: "a",
     href: "tel:250-819-3712"
@@ -35520,9 +35534,206 @@ var HomePage = function HomePage() {
   }))));
 };
 
-var _default = HomePage;
+var _default = KHomePage;
 exports.default = _default;
-},{"@babel/runtime/helpers/taggedTemplateLiteral":"node_modules/@babel/runtime/helpers/taggedTemplateLiteral.js","react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/pages/AboutPage.jsx":[function(require,module,exports) {
+},{"@babel/runtime/helpers/taggedTemplateLiteral":"node_modules/@babel/runtime/helpers/taggedTemplateLiteral.js","react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/pages/Kamloops/InfoPage.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime/helpers/taggedTemplateLiteral"));
+
+var _react = _interopRequireDefault(require("react"));
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _templateObject14() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    display: flex;\n    align-items: center;\n    justify-content: center;\n\n    width: 100%;\n    height: 10vh;\n\n    position: fixed;\n    bottom: 0;\n    overflow: hidden;\n    background: #FFFFFF;\n"]);
+
+  _templateObject14 = function _templateObject14() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject13() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    height: 6vh;\n    width: auto;\n"]);
+
+  _templateObject13 = function _templateObject13() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject12() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    \n    font-family: Poppins;\n    font-weight: 600;\n    font-size: 1.5em;\n    color: #0003FF;\n    text-align: center;\n    margin-left: 25%;\n    margin-right: 25%;\n    margin-top: 2%;\n    margin-bottom: 1%;\n"]);
+
+  _templateObject12 = function _templateObject12() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject11() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    font-weight: 600;\n"]);
+
+  _templateObject11 = function _templateObject11() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject10() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    font-weight: 300;\n"]);
+
+  _templateObject10 = function _templateObject10() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject9() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    display: block;\n\n    font-family: Poppins;\n    font-size: calc(12px + 0.3vmax);\n    color: #000000;\n    // text-align: center;\n    margin-left: 20%;\n    margin-right: 20%;\n    margin-top: 2%;\n    margin-bottom: 2%;\n"]);
+
+  _templateObject9 = function _templateObject9() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject8() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    \n    font-family: Poppins;\n    font-weight: 600;\n    font-size: calc(15px + 0.8vmax);\n    color: #0003FF;\n    text-align: center;\n    margin-left: 25%;\n    margin-right: 25%;\n    margin-top: 2%;\n    margin-bottom: 1%;\n"]);
+
+  _templateObject8 = function _templateObject8() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject7() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    height: 100%;\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    margin-top: calc(50px + 10vmax);\n    margin-bottom: 10vh;\n    overflow: scroll;\n"]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    position: fixed;\n    top: 0;\n    height: calc(30px + 5vmax);\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    padding: 2vmax;\n    overflow: hidden;\n    background: #FFFFFF;\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    font-family: Poppins;\n    font-size: calc(12px + 0.3vmax);\n    color: #0003FF;\n    text-align: center;\n    padding-left: 2vw;\n    padding-right: 2vw;\n    text-decoration: none;\n\n    &:hover {\n        transform: scale(1.1);\n    }\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n    justify-content: flex-end;\n    align-items: flex-end;\n    padding-bottom: 1vmin;\n    padding-right: 4vmin;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = (0, _taggedTemplateLiteral2.default)([" \n    // position: fixed;\n    height: calc(30px + 5vmax);\n    margin-left: 2vmin;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    display: flex;\n    height: 100%;\n    width: 100%;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+var S = {};
+S.page = _styledComponents.default.div(_templateObject());
+S.SmallLogo = _styledComponents.default.img(_templateObject2());
+S.SmallLogoContainer = _styledComponents.default.div(_templateObject3());
+S.Nav = _styledComponents.default.div(_templateObject4());
+S.NavItem = _styledComponents.default.div(_templateObject5());
+S.Top = _styledComponents.default.div(_templateObject6());
+S.Content = _styledComponents.default.div(_templateObject7());
+S.Title = _styledComponents.default.div(_templateObject8());
+S.Text = _styledComponents.default.div(_templateObject9());
+S.TextParagraph = _styledComponents.default.p(_templateObject10());
+S.TextParagraphBold = _styledComponents.default.p(_templateObject11());
+S.Contact = _styledComponents.default.div(_templateObject12());
+S.Slogan = _styledComponents.default.img(_templateObject13());
+S.SloganContainer = _styledComponents.default.div(_templateObject14());
+
+var KInfoPage = function KInfoPage() {
+  return /*#__PURE__*/_react.default.createElement(S.page, null, /*#__PURE__*/_react.default.createElement(S.Top, null, /*#__PURE__*/_react.default.createElement(S.SmallLogoContainer, {
+    as: "a",
+    href: "/"
+  }, /*#__PURE__*/_react.default.createElement(S.SmallLogo, {
+    src: "https://user-images.githubusercontent.com/46095809/77265982-7640bf80-6c5b-11ea-8286-c3d85e85f33f.png"
+  })), /*#__PURE__*/_react.default.createElement(S.Nav, null, /*#__PURE__*/_react.default.createElement(S.NavItem, {
+    as: "a",
+    href: "/kamloops/home"
+  }, "Home"), /*#__PURE__*/_react.default.createElement(S.NavItem, {
+    as: "a",
+    href: "/kamloops/info"
+  }, "How It Works"), /*#__PURE__*/_react.default.createElement(S.NavItem, {
+    as: "a",
+    href: "/kamloops/about"
+  }, "About Us"), /*#__PURE__*/_react.default.createElement(S.NavItem, {
+    as: "a",
+    href: "/kamloops/volunteer"
+  }, "Volunteer"))), /*#__PURE__*/_react.default.createElement(S.Content, null, /*#__PURE__*/_react.default.createElement(S.Title, null, "How It Works"), /*#__PURE__*/_react.default.createElement(S.Text, null, /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "Give us a call or text at ", /*#__PURE__*/_react.default.createElement("b", null, "250-819-3712"), " with your name, address, and order. We will connect you to a driver who will coordinate the time of delivery with you."), /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "Once the driver has purchased your order, they will notify you of the total cost. Please e-transfer the amount to ", /*#__PURE__*/_react.default.createElement("b", null, "hnkamloops@gmail.com")), /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "Following confirmation that the transaction is complete, the driver will deliver your order!")), /*#__PURE__*/_react.default.createElement(S.Title, null, "Hours of Operation"), /*#__PURE__*/_react.default.createElement(S.Text, null, /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "We are open ", /*#__PURE__*/_react.default.createElement("b", null, "10am - 5pm"), ", every day of the week."), /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "If you have a request outside these hours, please leave a voicemail and we will get back to you the next day.")), /*#__PURE__*/_react.default.createElement(S.SloganContainer, null, /*#__PURE__*/_react.default.createElement(S.Slogan, {
+    src: "https://user-images.githubusercontent.com/46095809/77281747-24ad2a80-6c85-11ea-9cd1-52aa728c3fe6.png"
+  }))));
+};
+
+var _default = KInfoPage;
+exports.default = _default;
+},{"@babel/runtime/helpers/taggedTemplateLiteral":"node_modules/@babel/runtime/helpers/taggedTemplateLiteral.js","react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/pages/Kamloops/AboutPage.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35705,7 +35916,7 @@ S.TextParagraphCenter = _styledComponents.default.p(_templateObject13());
 S.Slogan = _styledComponents.default.img(_templateObject14());
 S.SloganContainer = _styledComponents.default.div(_templateObject15());
 
-var AboutPage = function AboutPage() {
+var KAboutPage = function KAboutPage() {
   return /*#__PURE__*/_react.default.createElement(S.page, null, /*#__PURE__*/_react.default.createElement(S.Top, null, /*#__PURE__*/_react.default.createElement(S.SmallLogoContainer, {
     as: "a",
     href: "/"
@@ -35713,16 +35924,16 @@ var AboutPage = function AboutPage() {
     src: "https://user-images.githubusercontent.com/46095809/77265982-7640bf80-6c5b-11ea-8286-c3d85e85f33f.png"
   })), /*#__PURE__*/_react.default.createElement(S.Nav, null, /*#__PURE__*/_react.default.createElement(S.NavItem, {
     as: "a",
-    href: "/home"
+    href: "/kamloops/home"
   }, "Home"), /*#__PURE__*/_react.default.createElement(S.NavItem, {
     as: "a",
-    href: "/info"
+    href: "/kamloops/info"
   }, "How It Works"), /*#__PURE__*/_react.default.createElement(S.NavItem, {
     as: "a",
-    href: "/about"
+    href: "/kamloops/about"
   }, "About Us"), /*#__PURE__*/_react.default.createElement(S.NavItem, {
     as: "a",
-    href: "/volunteer"
+    href: "/kamloops/volunteer"
   }, "Volunteer"))), /*#__PURE__*/_react.default.createElement(S.Content, null, /*#__PURE__*/_react.default.createElement(S.Title, null, "About Us"), /*#__PURE__*/_react.default.createElement(S.Text, null, /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "Helpful Neighbor was started by two university students, James and Young. With classes postponed and the city in a state of emergency, we wanted to find a useful way to volunteer our time and energy.")), /*#__PURE__*/_react.default.createElement(S.AboutImageContainer, null, /*#__PURE__*/_react.default.createElement(S.AboutImage, {
     src: "https://user-images.githubusercontent.com/46095808/77294701-f5f17d00-6ca1-11ea-988c-69ffe2ea98c3.jpg"
   })), /*#__PURE__*/_react.default.createElement(S.Title, null, "Media"), /*#__PURE__*/_react.default.createElement(S.Text, null, /*#__PURE__*/_react.default.createElement(S.TextParagraphCenter, null, "Check us out on the media!"), /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, /*#__PURE__*/_react.default.createElement("b", null, "CFJC Today"), " ", /*#__PURE__*/_react.default.createElement("i", null, "March 30, 2020"), " :"), /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, /*#__PURE__*/_react.default.createElement("a", {
@@ -35734,9 +35945,9 @@ var AboutPage = function AboutPage() {
   }))));
 };
 
-var _default = AboutPage;
+var _default = KAboutPage;
 exports.default = _default;
-},{"@babel/runtime/helpers/taggedTemplateLiteral":"node_modules/@babel/runtime/helpers/taggedTemplateLiteral.js","react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/pages/VoluteerPage.jsx":[function(require,module,exports) {
+},{"@babel/runtime/helpers/taggedTemplateLiteral":"node_modules/@babel/runtime/helpers/taggedTemplateLiteral.js","react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/pages/Kamloops/VoluteerPage.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35919,7 +36130,7 @@ S.Slogan = _styledComponents.default.img(_templateObject13());
 S.SloganContainer = _styledComponents.default.div(_templateObject14());
 S.WhiteSpace = _styledComponents.default.div(_templateObject15());
 
-var VolunteerPage = function VolunteerPage() {
+var KVolunteerPage = function KVolunteerPage() {
   return /*#__PURE__*/_react.default.createElement(S.page, null, /*#__PURE__*/_react.default.createElement(S.Top, null, /*#__PURE__*/_react.default.createElement(S.SmallLogoContainer, {
     as: "a",
     href: "/"
@@ -35927,16 +36138,16 @@ var VolunteerPage = function VolunteerPage() {
     src: "https://user-images.githubusercontent.com/46095809/77265982-7640bf80-6c5b-11ea-8286-c3d85e85f33f.png"
   })), /*#__PURE__*/_react.default.createElement(S.Nav, null, /*#__PURE__*/_react.default.createElement(S.NavItem, {
     as: "a",
-    href: "/home"
+    href: "/kamloops/home"
   }, "Home"), /*#__PURE__*/_react.default.createElement(S.NavItem, {
     as: "a",
-    href: "/info"
+    href: "/kamloops/info"
   }, "How It Works"), /*#__PURE__*/_react.default.createElement(S.NavItem, {
     as: "a",
-    href: "/about"
+    href: "/kamloops/about"
   }, "About Us"), /*#__PURE__*/_react.default.createElement(S.NavItem, {
     as: "a",
-    href: "/volunteer"
+    href: "/kamloops/volunteer"
   }, "Volunteer"))), /*#__PURE__*/_react.default.createElement(S.Content, null, /*#__PURE__*/_react.default.createElement(S.Title, null, "Volunteer"), /*#__PURE__*/_react.default.createElement(S.Text, null, /*#__PURE__*/_react.default.createElement(S.TextParagraphBold, null, "Want to help out?"), /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "Please send us an email, and we will reach out with more information!")), /*#__PURE__*/_react.default.createElement(S.Contact, {
     as: "a",
     href: "mailto:hnkamloops@gmail.com"
@@ -35945,9 +36156,209 @@ var VolunteerPage = function VolunteerPage() {
   })), /*#__PURE__*/_react.default.createElement(S.Text, null, /*#__PURE__*/_react.default.createElement(S.WhiteSpace, null, /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "Please send us an email, and we will reach out with more information!"), /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "Please send us an email, and we will reach out with more information!"), /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "Please send us an email, and we will reach out with more information!")))));
 };
 
-var _default = VolunteerPage;
+var _default = KVolunteerPage;
 exports.default = _default;
-},{"@babel/runtime/helpers/taggedTemplateLiteral":"node_modules/@babel/runtime/helpers/taggedTemplateLiteral.js","react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/pages/InfoPage.jsx":[function(require,module,exports) {
+},{"@babel/runtime/helpers/taggedTemplateLiteral":"node_modules/@babel/runtime/helpers/taggedTemplateLiteral.js","react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/pages/Calgary/HomePage.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime/helpers/taggedTemplateLiteral"));
+
+var _react = _interopRequireDefault(require("react"));
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _templateObject14() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    text-decoration: none;\n"]);
+
+  _templateObject14 = function _templateObject14() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject13() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    display: flex;\n    align-items: center;\n    justify-content: center;\n\n    width: 100%;\n    height: 10vh;\n\n    position: fixed;\n    bottom: 0;\n    overflow: hidden;\n    background: #FFFFFF;\n"]);
+
+  _templateObject13 = function _templateObject13() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject12() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    height: 6vh;\n    width: auto;\n"]);
+
+  _templateObject12 = function _templateObject12() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject11() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    font-weight: 800;\n"]);
+
+  _templateObject11 = function _templateObject11() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject10() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    font-weight: 200;\n"]);
+
+  _templateObject10 = function _templateObject10() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject9() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    \n    font-family: Poppins;\n    font-weight: 600;\n    font-size: 1.5em;\n    color: #0003FF;\n    text-align: center;\n    margin-left: 25%;\n    margin-right: 25%;\n    margin-top: 1%;\n    margin-bottom: 2%;\n\n"]);
+
+  _templateObject9 = function _templateObject9() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject8() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    display: block;\n\n    font-family: Poppins;\n    font-size: calc(12px + 0.3vmax);\n    color: #000000;\n    // text-align: center;\n    margin-left: 20%;\n    margin-right: 20%;\n    margin-top: 2%;\n    margin-bottom: 2%;\n"]);
+
+  _templateObject8 = function _templateObject8() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject7() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    height: 100%;\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    margin-top: calc(50px + 10vmax);\n    margin-bottom: 10vh;\n    overflow: scroll;\n"]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    position: fixed;\n    top: 0;\n    height: calc(30px + 5vmax);\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    padding: 2vmax;\n    overflow: hidden;\n    background: #FFFFFF;\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    font-family: Poppins;\n    font-size: calc(12px + 0.3vmax);\n    color: #0003FF;\n    text-align: center;\n    padding-left: 2vw;\n    padding-right: 2vw;\n    text-decoration: none;\n\n    &:hover {\n        transform: scale(1.1);\n    }\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n    justify-content: flex-end;\n    align-items: flex-end;\n    padding-bottom: 1vmin;\n    padding-right: 4vmin;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = (0, _taggedTemplateLiteral2.default)([" \n    // position: fixed;\n    height: calc(30px + 5vmax);\n    margin-left: 2vmin;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    display: flex;\n    height: 100%;\n    width: 100%;\n    flex-direction: column;\n    align-items: center;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+var S = {};
+S.page = _styledComponents.default.div(_templateObject());
+S.SmallLogo = _styledComponents.default.img(_templateObject2());
+S.SmallLogoContainer = _styledComponents.default.div(_templateObject3());
+S.Nav = _styledComponents.default.div(_templateObject4());
+S.NavItem = _styledComponents.default.div(_templateObject5());
+S.Top = _styledComponents.default.div(_templateObject6());
+S.Content = _styledComponents.default.div(_templateObject7());
+S.Text = _styledComponents.default.div(_templateObject8());
+S.Contact = _styledComponents.default.div(_templateObject9());
+S.TextParagraph = _styledComponents.default.p(_templateObject10());
+S.TextParagraphBold = _styledComponents.default.p(_templateObject11());
+S.Slogan = _styledComponents.default.img(_templateObject12());
+S.SloganContainer = _styledComponents.default.div(_templateObject13());
+S.PhoneContainer = _styledComponents.default.div(_templateObject14());
+
+var CHomePage = function CHomePage() {
+  return /*#__PURE__*/_react.default.createElement(S.page, null, /*#__PURE__*/_react.default.createElement(S.Top, null, /*#__PURE__*/_react.default.createElement(S.SmallLogoContainer, {
+    as: "a",
+    href: "/"
+  }, /*#__PURE__*/_react.default.createElement(S.SmallLogo, {
+    src: "https://user-images.githubusercontent.com/46095809/77265982-7640bf80-6c5b-11ea-8286-c3d85e85f33f.png"
+  })), /*#__PURE__*/_react.default.createElement(S.Nav, null, /*#__PURE__*/_react.default.createElement(S.NavItem, {
+    as: "a",
+    href: "/calgary/home"
+  }, "Home"), /*#__PURE__*/_react.default.createElement(S.NavItem, {
+    as: "a",
+    href: "/calgary/info"
+  }, "How It Works"), /*#__PURE__*/_react.default.createElement(S.NavItem, {
+    as: "a",
+    href: "/calgary/about"
+  }, "About Us"), /*#__PURE__*/_react.default.createElement(S.NavItem, {
+    as: "a",
+    href: "/calgary/volunteer"
+  }, "Volunteer"))), /*#__PURE__*/_react.default.createElement(S.Content, null, /*#__PURE__*/_react.default.createElement(S.Text, null, /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "Hello, welcome to Helpful Neighbor!"), /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "We are a community of young people wanting to lend a helping hand in our community during these tough times of the COVID-19 pandemic."), /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "We want to offer our volunteer services to those in need - especially the senior community, those with underlying conditions, or anyone who may not feel comfortable leaving their home at this time."), /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "Whether it be groceries, picking up prescriptions or any other errand, please do not hesitate to reach out; we will be more than happy to help!"), /*#__PURE__*/_react.default.createElement(S.TextParagraphBold, null, "Call or text the number below with a description of the errand you need. We will coordinate an estimated delivery time with a deliverer and notify you as soon as we can. If payment is needed (ex. groceries), this can be made via cash or e-transfer to the deliverer.")), /*#__PURE__*/_react.default.createElement(S.PhoneContainer, {
+    as: "a",
+    href: "tel:250-819-3712"
+  }, /*#__PURE__*/_react.default.createElement(S.Contact, null, "(250) 819 - 3712")), /*#__PURE__*/_react.default.createElement(S.SloganContainer, null, /*#__PURE__*/_react.default.createElement(S.Slogan, {
+    src: "https://user-images.githubusercontent.com/46095809/77281747-24ad2a80-6c85-11ea-9cd1-52aa728c3fe6.png"
+  }))));
+};
+
+var _default = CHomePage;
+exports.default = _default;
+},{"@babel/runtime/helpers/taggedTemplateLiteral":"node_modules/@babel/runtime/helpers/taggedTemplateLiteral.js","react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/pages/Calgary/InfoPage.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -36119,7 +36530,7 @@ S.Contact = _styledComponents.default.div(_templateObject12());
 S.Slogan = _styledComponents.default.img(_templateObject13());
 S.SloganContainer = _styledComponents.default.div(_templateObject14());
 
-var InfoPage = function InfoPage() {
+var CInfoPage = function CInfoPage() {
   return /*#__PURE__*/_react.default.createElement(S.page, null, /*#__PURE__*/_react.default.createElement(S.Top, null, /*#__PURE__*/_react.default.createElement(S.SmallLogoContainer, {
     as: "a",
     href: "/"
@@ -36127,22 +36538,447 @@ var InfoPage = function InfoPage() {
     src: "https://user-images.githubusercontent.com/46095809/77265982-7640bf80-6c5b-11ea-8286-c3d85e85f33f.png"
   })), /*#__PURE__*/_react.default.createElement(S.Nav, null, /*#__PURE__*/_react.default.createElement(S.NavItem, {
     as: "a",
-    href: "/home"
+    href: "/calgary/home"
   }, "Home"), /*#__PURE__*/_react.default.createElement(S.NavItem, {
     as: "a",
-    href: "/info"
+    href: "/calgary/info"
   }, "How It Works"), /*#__PURE__*/_react.default.createElement(S.NavItem, {
     as: "a",
-    href: "/about"
+    href: "/calgary/about"
   }, "About Us"), /*#__PURE__*/_react.default.createElement(S.NavItem, {
     as: "a",
-    href: "/volunteer"
+    href: "/calgary/volunteer"
   }, "Volunteer"))), /*#__PURE__*/_react.default.createElement(S.Content, null, /*#__PURE__*/_react.default.createElement(S.Title, null, "How It Works"), /*#__PURE__*/_react.default.createElement(S.Text, null, /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "Give us a call or text at ", /*#__PURE__*/_react.default.createElement("b", null, "250-819-3712"), " with your name, address, and order. We will connect you to a driver who will coordinate the time of delivery with you."), /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "Once the driver has purchased your order, they will notify you of the total cost. Please e-transfer the amount to ", /*#__PURE__*/_react.default.createElement("b", null, "hnkamloops@gmail.com")), /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "Following confirmation that the transaction is complete, the driver will deliver your order!")), /*#__PURE__*/_react.default.createElement(S.Title, null, "Hours of Operation"), /*#__PURE__*/_react.default.createElement(S.Text, null, /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "We are open ", /*#__PURE__*/_react.default.createElement("b", null, "10am - 5pm"), ", every day of the week."), /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "If you have a request outside these hours, please leave a voicemail and we will get back to you the next day.")), /*#__PURE__*/_react.default.createElement(S.SloganContainer, null, /*#__PURE__*/_react.default.createElement(S.Slogan, {
     src: "https://user-images.githubusercontent.com/46095809/77281747-24ad2a80-6c85-11ea-9cd1-52aa728c3fe6.png"
   }))));
 };
 
-var _default = InfoPage;
+var _default = CInfoPage;
+exports.default = _default;
+},{"@babel/runtime/helpers/taggedTemplateLiteral":"node_modules/@babel/runtime/helpers/taggedTemplateLiteral.js","react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/pages/Calgary/AboutPage.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime/helpers/taggedTemplateLiteral"));
+
+var _react = _interopRequireDefault(require("react"));
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _templateObject15() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    display: flex;\n    align-items: center;\n    justify-content: center;\n\n    width: 100%;\n    height: 10vh;\n\n    position: fixed;\n    bottom: 0;\n    overflow: hidden;\n    background: #FFFFFF;\n"]);
+
+  _templateObject15 = function _templateObject15() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject14() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    height: 6vh;\n    width: auto;\n"]);
+
+  _templateObject14 = function _templateObject14() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject13() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    text-align: center;\n"]);
+
+  _templateObject13 = function _templateObject13() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject12() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    font-weight: 300;\n"]);
+
+  _templateObject12 = function _templateObject12() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject11() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    display: block;\n\n    font-family: Poppins;\n    font-size: calc(12px + 0.3vmax);\n    color: #000000;\n    // text-align: center;\n    margin-left: 20%;\n    margin-right: 20%;\n    margin-top: 2%;\n    margin-bottom: 2%;\n"]);
+
+  _templateObject11 = function _templateObject11() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject10() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    \n    font-family: Poppins;\n    font-weight: 600;\n    font-size: calc(15px + 0.8vmax);\n    color: #0003FF;\n    text-align: center;\n    margin-left: 25%;\n    margin-right: 25%;\n    margin-top: 2%;\n    margin-bottom: 1%;\n"]);
+
+  _templateObject10 = function _templateObject10() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject9() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    display: block;\n    margin-top: 2%;\n    margin-bottom: 2%;\n"]);
+
+  _templateObject9 = function _templateObject9() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject8() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    width: 60%;\n    margin-left: 20%;\n    margin-right: 20%;\n"]);
+
+  _templateObject8 = function _templateObject8() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject7() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    height: 100%;\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    margin-top: calc(50px + 10vmax);\n    margin-bottom: 10vh;\n    overflow: scroll;\n"]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    position: fixed;\n    top: 0;\n    height: calc(30px + 5vmax);\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    padding: 2vmax;\n    overflow: hidden;\n    background: #FFFFFF;\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    font-family: Poppins;\n    font-size: calc(12px + 0.3vmax);\n    color: #0003FF;\n    text-align: center;\n    padding-left: 2vw;\n    padding-right: 2vw;\n    text-decoration: none;\n\n    &:hover {\n        transform: scale(1.1);\n    }\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n    justify-content: flex-end;\n    align-items: flex-end;\n    padding-bottom: 1vmin;\n    padding-right: 4vmin;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = (0, _taggedTemplateLiteral2.default)([" \n    // position: fixed;\n    height: calc(30px + 5vmax);\n    margin-left: 2vmin;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    display: flex;\n    height: 100%;\n    width: 100%;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+var S = {};
+S.page = _styledComponents.default.div(_templateObject());
+S.SmallLogo = _styledComponents.default.img(_templateObject2());
+S.SmallLogoContainer = _styledComponents.default.div(_templateObject3());
+S.Nav = _styledComponents.default.div(_templateObject4());
+S.NavItem = _styledComponents.default.div(_templateObject5());
+S.Top = _styledComponents.default.div(_templateObject6());
+S.Content = _styledComponents.default.div(_templateObject7());
+S.AboutImage = _styledComponents.default.img(_templateObject8());
+S.AboutImageContainer = _styledComponents.default.div(_templateObject9());
+S.Title = _styledComponents.default.div(_templateObject10());
+S.Text = _styledComponents.default.div(_templateObject11());
+S.TextParagraph = _styledComponents.default.p(_templateObject12());
+S.TextParagraphCenter = _styledComponents.default.p(_templateObject13());
+S.Slogan = _styledComponents.default.img(_templateObject14());
+S.SloganContainer = _styledComponents.default.div(_templateObject15());
+
+var CAboutPage = function CAboutPage() {
+  return /*#__PURE__*/_react.default.createElement(S.page, null, /*#__PURE__*/_react.default.createElement(S.Top, null, /*#__PURE__*/_react.default.createElement(S.SmallLogoContainer, {
+    as: "a",
+    href: "/"
+  }, /*#__PURE__*/_react.default.createElement(S.SmallLogo, {
+    src: "https://user-images.githubusercontent.com/46095809/77265982-7640bf80-6c5b-11ea-8286-c3d85e85f33f.png"
+  })), /*#__PURE__*/_react.default.createElement(S.Nav, null, /*#__PURE__*/_react.default.createElement(S.NavItem, {
+    as: "a",
+    href: "/calgary/home"
+  }, "Home"), /*#__PURE__*/_react.default.createElement(S.NavItem, {
+    as: "a",
+    href: "/calgary/info"
+  }, "How It Works"), /*#__PURE__*/_react.default.createElement(S.NavItem, {
+    as: "a",
+    href: "/calgary/about"
+  }, "About Us"), /*#__PURE__*/_react.default.createElement(S.NavItem, {
+    as: "a",
+    href: "/calgary/volunteer"
+  }, "Volunteer"))), /*#__PURE__*/_react.default.createElement(S.Content, null, /*#__PURE__*/_react.default.createElement(S.Title, null, "About Us"), /*#__PURE__*/_react.default.createElement(S.Text, null, /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "Helpful Neighbor was started by two university students, James and Young. With classes postponed and the city in a state of emergency, we wanted to find a useful way to volunteer our time and energy.")), /*#__PURE__*/_react.default.createElement(S.AboutImageContainer, null, /*#__PURE__*/_react.default.createElement(S.AboutImage, {
+    src: "https://user-images.githubusercontent.com/46095808/77294701-f5f17d00-6ca1-11ea-988c-69ffe2ea98c3.jpg"
+  })), /*#__PURE__*/_react.default.createElement(S.Title, null, "Media"), /*#__PURE__*/_react.default.createElement(S.Text, null, /*#__PURE__*/_react.default.createElement(S.TextParagraphCenter, null, "Check us out on the media!"), /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, /*#__PURE__*/_react.default.createElement("b", null, "CFJC Today"), " ", /*#__PURE__*/_react.default.createElement("i", null, "March 30, 2020"), " :"), /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "https://cfjctoday.com/2020/03/30/pair-of-university-students-from-kamloops-here-to-help-during-pandemic/?fbclid=IwAR3Om0Oq8LMWreH5OBDxPKw-iI0bBJgC9NCDVq0fDe_tWGMKwCNP31xLl1I"
+  }, "Pair of university students from Kamloops here to help during pandemic")), /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, /*#__PURE__*/_react.default.createElement("b", null, "Kamloops Matters"), " ", /*#__PURE__*/_react.default.createElement("i", null, "March 29, 2020"), " :"), /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "https://www.castanetkamloops.net/edition/news-story-295793-48-.htm?fbclid=IwAR0PcRtuLt3QZVxGiHSgGoUTcl9hZjzCjBrskGAdWK1484BJMMhyvGZ3V_c#295793"
+  }, "Students create online platform to help their Kamloops neighbours"))), /*#__PURE__*/_react.default.createElement(S.SloganContainer, null, /*#__PURE__*/_react.default.createElement(S.Slogan, {
+    src: "https://user-images.githubusercontent.com/46095809/77281747-24ad2a80-6c85-11ea-9cd1-52aa728c3fe6.png"
+  }))));
+};
+
+var _default = CAboutPage;
+exports.default = _default;
+},{"@babel/runtime/helpers/taggedTemplateLiteral":"node_modules/@babel/runtime/helpers/taggedTemplateLiteral.js","react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/pages/Calgary/VoluteerPage.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime/helpers/taggedTemplateLiteral"));
+
+var _react = _interopRequireDefault(require("react"));
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _templateObject15() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    background: #FFFFFF;\n    color: #FFFFFF;\n"]);
+
+  _templateObject15 = function _templateObject15() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject14() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    display: flex;\n    align-items: center;\n    justify-content: center;\n\n    width: 100%;\n    height: 10vh;\n\n    position: fixed;\n    bottom: 0;\n    overflow: hidden;\n    background: #FFFFFF;\n"]);
+
+  _templateObject14 = function _templateObject14() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject13() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    height: 6vh;\n    width: auto;\n"]);
+
+  _templateObject13 = function _templateObject13() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject12() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    \n    font-family: Poppins;\n    font-weight: 600;\n    font-size: 1.5em;\n    color: #0003FF;\n    text-align: center;\n    // margin-left: 25%;\n    // margin-right: 25%;\n    margin-top: 2%;\n    margin-bottom: 1%;\n"]);
+
+  _templateObject12 = function _templateObject12() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject11() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    font-weight: 600;\n"]);
+
+  _templateObject11 = function _templateObject11() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject10() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    font-weight: 300;\n"]);
+
+  _templateObject10 = function _templateObject10() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject9() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    display: block;\n\n    font-family: Poppins;\n    font-size: calc(12px + 0.3vmax);\n    color: #000000;\n    text-align: center;\n    margin-left: 20%;\n    margin-right: 20%;\n    margin-top: 2%;\n    margin-bottom: 2%;\n"]);
+
+  _templateObject9 = function _templateObject9() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject8() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    \n    font-family: Poppins;\n    font-weight: 600;\n    font-size: calc(15px + 0.8vmax);\n    color: #0003FF;\n    text-align: center;\n    margin-left: 25%;\n    margin-right: 25%;\n    margin-top: 2%;\n    margin-bottom: 1%;\n"]);
+
+  _templateObject8 = function _templateObject8() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject7() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    height: 100%;\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    margin-top: calc(50px + 10vmax);\n    margin-bottom: 10vh;\n    overflow: scroll;\n"]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    position: fixed;\n    top: 0;\n    height: calc(30px + 5vmax);\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    padding: 2vmax;\n    overflow: hidden;\n    background: #FFFFFF;\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    font-family: Poppins;\n    font-size: calc(12px + 0.3vmax);\n    color: #0003FF;\n    text-align: center;\n    padding-left: 2vw;\n    padding-right: 2vw;\n    text-decoration: none;\n\n    &:hover {\n        transform: scale(1.1);\n    }\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n    justify-content: flex-end;\n    align-items: flex-end;\n    padding-bottom: 1vmin;\n    padding-right: 4vmin;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = (0, _taggedTemplateLiteral2.default)([" \n    // position: fixed;\n    height: calc(30px + 5vmax);\n    margin-left: 2vmin;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n    display: flex;\n    height: 100%;\n    width: 100%;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+var S = {};
+S.page = _styledComponents.default.div(_templateObject());
+S.SmallLogo = _styledComponents.default.img(_templateObject2());
+S.SmallLogoContainer = _styledComponents.default.div(_templateObject3());
+S.Nav = _styledComponents.default.div(_templateObject4());
+S.NavItem = _styledComponents.default.div(_templateObject5());
+S.Top = _styledComponents.default.div(_templateObject6());
+S.Content = _styledComponents.default.div(_templateObject7());
+S.Title = _styledComponents.default.div(_templateObject8());
+S.Text = _styledComponents.default.div(_templateObject9());
+S.TextParagraph = _styledComponents.default.p(_templateObject10());
+S.TextParagraphBold = _styledComponents.default.p(_templateObject11());
+S.Contact = _styledComponents.default.div(_templateObject12());
+S.Slogan = _styledComponents.default.img(_templateObject13());
+S.SloganContainer = _styledComponents.default.div(_templateObject14());
+S.WhiteSpace = _styledComponents.default.div(_templateObject15());
+
+var CVolunteerPage = function CVolunteerPage() {
+  return /*#__PURE__*/_react.default.createElement(S.page, null, /*#__PURE__*/_react.default.createElement(S.Top, null, /*#__PURE__*/_react.default.createElement(S.SmallLogoContainer, {
+    as: "a",
+    href: "/"
+  }, /*#__PURE__*/_react.default.createElement(S.SmallLogo, {
+    src: "https://user-images.githubusercontent.com/46095809/77265982-7640bf80-6c5b-11ea-8286-c3d85e85f33f.png"
+  })), /*#__PURE__*/_react.default.createElement(S.Nav, null, /*#__PURE__*/_react.default.createElement(S.NavItem, {
+    as: "a",
+    href: "/calgary/home"
+  }, "Home"), /*#__PURE__*/_react.default.createElement(S.NavItem, {
+    as: "a",
+    href: "/calgary/info"
+  }, "How It Works"), /*#__PURE__*/_react.default.createElement(S.NavItem, {
+    as: "a",
+    href: "/calgary/about"
+  }, "About Us"), /*#__PURE__*/_react.default.createElement(S.NavItem, {
+    as: "a",
+    href: "/calgary/volunteer"
+  }, "Volunteer"))), /*#__PURE__*/_react.default.createElement(S.Content, null, /*#__PURE__*/_react.default.createElement(S.Title, null, "Volunteer"), /*#__PURE__*/_react.default.createElement(S.Text, null, /*#__PURE__*/_react.default.createElement(S.TextParagraphBold, null, "Want to help out?"), /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "Please send us an email, and we will reach out with more information!")), /*#__PURE__*/_react.default.createElement(S.Contact, {
+    as: "a",
+    href: "mailto:hnkamloops@gmail.com"
+  }, "hnkamloops@gmail.com"), /*#__PURE__*/_react.default.createElement(S.SloganContainer, null, /*#__PURE__*/_react.default.createElement(S.Slogan, {
+    src: "https://user-images.githubusercontent.com/46095809/77281747-24ad2a80-6c85-11ea-9cd1-52aa728c3fe6.png"
+  })), /*#__PURE__*/_react.default.createElement(S.Text, null, /*#__PURE__*/_react.default.createElement(S.WhiteSpace, null, /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "Please send us an email, and we will reach out with more information!"), /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "Please send us an email, and we will reach out with more information!"), /*#__PURE__*/_react.default.createElement(S.TextParagraph, null, "Please send us an email, and we will reach out with more information!")))));
+};
+
+var _default = CVolunteerPage;
 exports.default = _default;
 },{"@babel/runtime/helpers/taggedTemplateLiteral":"node_modules/@babel/runtime/helpers/taggedTemplateLiteral.js","react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/App.jsx":[function(require,module,exports) {
 "use strict";
@@ -36168,13 +37004,21 @@ var _reactRouterDom = require("react-router-dom");
 
 var _LandingPage = _interopRequireDefault(require("./pages/LandingPage"));
 
-var _HomePage = _interopRequireDefault(require("./pages/HomePage"));
+var _HomePage = _interopRequireDefault(require("./pages/Kamloops/HomePage"));
 
-var _AboutPage = _interopRequireDefault(require("./pages/AboutPage"));
+var _InfoPage = _interopRequireDefault(require("./pages/Kamloops/InfoPage"));
 
-var _VoluteerPage = _interopRequireDefault(require("./pages/VoluteerPage"));
+var _AboutPage = _interopRequireDefault(require("./pages/Kamloops/AboutPage"));
 
-var _InfoPage = _interopRequireDefault(require("./pages/InfoPage"));
+var _VoluteerPage = _interopRequireDefault(require("./pages/Kamloops/VoluteerPage"));
+
+var _HomePage2 = _interopRequireDefault(require("./pages/Calgary/HomePage"));
+
+var _InfoPage2 = _interopRequireDefault(require("./pages/Calgary/InfoPage"));
+
+var _AboutPage2 = _interopRequireDefault(require("./pages/Calgary/AboutPage"));
+
+var _VoluteerPage2 = _interopRequireDefault(require("./pages/Calgary/VoluteerPage"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
@@ -36204,17 +37048,29 @@ var App = /*#__PURE__*/function (_Component) {
         path: "/",
         component: _LandingPage.default
       }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-        path: "/home",
+        path: "/kamloops/home",
         component: _HomePage.default
       }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-        path: "/info",
+        path: "/kamloops/info",
         component: _InfoPage.default
       }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-        path: "/about",
+        path: "/kamloops/about",
         component: _AboutPage.default
       }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-        path: "/volunteer",
+        path: "/kamloops/volunteer",
         component: _VoluteerPage.default
+      }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+        path: "/calgary/home",
+        component: _HomePage2.default
+      }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+        path: "/calgary/info",
+        component: _InfoPage2.default
+      }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+        path: "/calgary/about",
+        component: _AboutPage2.default
+      }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+        path: "/calgary/volunteer",
+        component: _VoluteerPage2.default
       })));
     }
   }]);
@@ -36223,7 +37079,7 @@ var App = /*#__PURE__*/function (_Component) {
 
 var _default = App;
 exports.default = _default;
-},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","@babel/runtime/helpers/possibleConstructorReturn":"node_modules/@babel/runtime/helpers/possibleConstructorReturn.js","@babel/runtime/helpers/getPrototypeOf":"node_modules/@babel/runtime/helpers/getPrototypeOf.js","@babel/runtime/helpers/inherits":"node_modules/@babel/runtime/helpers/inherits.js","react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./pages/LandingPage":"src/pages/LandingPage.jsx","./pages/HomePage":"src/pages/HomePage.jsx","./pages/AboutPage":"src/pages/AboutPage.jsx","./pages/VoluteerPage":"src/pages/VoluteerPage.jsx","./pages/InfoPage":"src/pages/InfoPage.jsx"}],"src/index.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","@babel/runtime/helpers/possibleConstructorReturn":"node_modules/@babel/runtime/helpers/possibleConstructorReturn.js","@babel/runtime/helpers/getPrototypeOf":"node_modules/@babel/runtime/helpers/getPrototypeOf.js","@babel/runtime/helpers/inherits":"node_modules/@babel/runtime/helpers/inherits.js","react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./pages/LandingPage":"src/pages/LandingPage.jsx","./pages/Kamloops/HomePage":"src/pages/Kamloops/HomePage.jsx","./pages/Kamloops/InfoPage":"src/pages/Kamloops/InfoPage.jsx","./pages/Kamloops/AboutPage":"src/pages/Kamloops/AboutPage.jsx","./pages/Kamloops/VoluteerPage":"src/pages/Kamloops/VoluteerPage.jsx","./pages/Calgary/HomePage":"src/pages/Calgary/HomePage.jsx","./pages/Calgary/InfoPage":"src/pages/Calgary/InfoPage.jsx","./pages/Calgary/AboutPage":"src/pages/Calgary/AboutPage.jsx","./pages/Calgary/VoluteerPage":"src/pages/Calgary/VoluteerPage.jsx"}],"src/index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -36263,7 +37119,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57954" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51893" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,11 +1,18 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import LandingPage from "./pages/LandingPage";
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import VolunteerPage from './pages/VoluteerPage';
-import InfoPage from './pages/InfoPage';
+
+import LandingPage from './pages/LandingPage';
+
+import KHomePage from './pages/Kamloops/HomePage';
+import KInfoPage from './pages/Kamloops/InfoPage';
+import KAboutPage from './pages/Kamloops/AboutPage';
+import KVolunteerPage from './pages/Kamloops/VoluteerPage';
+
+import CHomePage from './pages/Calgary/HomePage';
+import CInfoPage from './pages/Calgary/InfoPage';
+import CAboutPage from './pages/Calgary/AboutPage';
+import CVolunteerPage from './pages/Calgary/VoluteerPage';
 
 
 class App extends Component {
@@ -19,10 +26,16 @@ class App extends Component {
       <Router>
         <div>
           <Route exact path="/" component={LandingPage} />
-          <Route path="/home" component={HomePage} />
-          <Route path="/info" component={InfoPage} />
-          <Route path="/about" component={AboutPage} />
-          <Route path="/volunteer" component={VolunteerPage} />
+
+          <Route path="/kamloops/home" component={KHomePage} />
+          <Route path="/kamloops/info" component={KInfoPage} />
+          <Route path="/kamloops/about" component={KAboutPage} />
+          <Route path="/kamloops/volunteer" component={KVolunteerPage} />
+
+          <Route path="/calgary/home" component={CHomePage} />
+          <Route path="/calgary/info" component={CInfoPage} />
+          <Route path="/calgary/about" component={CAboutPage} />
+          <Route path="/calgary/volunteer" component={CVolunteerPage} />
         </div>
         
       </Router>

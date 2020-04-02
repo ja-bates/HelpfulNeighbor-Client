@@ -9,7 +9,6 @@ S.page = styled.div`
     width: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 `;
 
 S.SmallLogo = styled.img` 
@@ -69,19 +68,6 @@ S.Content = styled.div`
     overflow: scroll;
 `;
 
-S.Title = styled.div`
-    
-    font-family: Poppins;
-    font-weight: 600;
-    font-size: calc(15px + 0.8vmax);
-    color: #0003FF;
-    text-align: center;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 2%;
-    margin-bottom: 1%;
-`;
-
 S.Text = styled.div`
     display: block;
 
@@ -95,14 +81,6 @@ S.Text = styled.div`
     margin-bottom: 2%;
 `;
 
-S.TextParagraph = styled.p`
-    font-weight: 300;
-`;
-
-S.TextParagraphBold = styled.p`
-    font-weight: 600;
-`;
-
 S.Contact = styled.div`
     
     font-family: Poppins;
@@ -112,9 +90,19 @@ S.Contact = styled.div`
     text-align: center;
     margin-left: 25%;
     margin-right: 25%;
-    margin-top: 2%;
-    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+
 `;
+
+S.TextParagraph = styled.p`
+    font-weight: 200;
+`;
+
+S.TextParagraphBold = styled.p`
+    font-weight: 800;
+`;
+
 
 S.Slogan = styled.img`
     height: 6vh;
@@ -135,7 +123,11 @@ S.SloganContainer = styled.div`
     background: #FFFFFF;
 `;
 
-const InfoPage = () => {
+S.PhoneContainer = styled.div`
+    text-decoration: none;
+`;
+
+const KHomePage = () => {
     
     return (
         <S.page>
@@ -146,45 +138,47 @@ const InfoPage = () => {
                     />
                 </S.SmallLogoContainer>
                 <S.Nav>
-                    <S.NavItem as="a" href="/home">Home</S.NavItem>
-                    <S.NavItem as="a" href="/info">How It Works</S.NavItem>
-                    <S.NavItem as="a" href="/about">About Us</S.NavItem>
-                    <S.NavItem as="a" href="/volunteer">Volunteer</S.NavItem>
+                    <S.NavItem as="a" href="/kamloops/home">Home</S.NavItem>
+                    <S.NavItem as="a" href="/kamloops/info">How It Works</S.NavItem>
+                    <S.NavItem as="a" href="/kamloops/about">About Us</S.NavItem>
+                    <S.NavItem as="a" href="/kamloops/volunteer">Volunteer</S.NavItem>
                 </S.Nav>
             </S.Top>
-
             <S.Content>
-                <S.Title>
-                    How It Works
-                </S.Title>
                 <S.Text>
                     <S.TextParagraph>
-                        Give us a call or text at <b>250-819-3712</b> with your name, address, and order. We will connect you to a driver who will coordinate the time of delivery with you.
+                    Hello, welcome to Helpful Neighbor!
                     </S.TextParagraph>
                     <S.TextParagraph>
-                        Once the driver has purchased your order, they will notify you of the total cost. Please e-transfer the amount to <b>hnkamloops@gmail.com</b>
+                    We are a community of young people wanting to lend a helping hand in our community during these tough times of the COVID-19 pandemic.     
                     </S.TextParagraph>
                     <S.TextParagraph>
-                        Following confirmation that the transaction is complete, the driver will deliver your order!
-                    </S.TextParagraph> 
+                    We want to offer our volunteer services to those in need - especially the senior community, those with underlying conditions, or anyone who may not feel comfortable leaving their home at this time. 
+                    </S.TextParagraph>
+                    {/* <S.TextParagraph>
+                    Whether it be delivering groceries or any other errand, please do not hesitate to give us a call; we will be more than happy to help!                        
+                    </S.TextParagraph> */}
+                    {/* <S.TextParagraphBold> 
+                        Call or text the type of delivery (e.g. grocery, pharmacy), address and any other details, and we will respond with an estimated time of delivery. Receipts will be delivered and payments can be made in cash/cheque/e-transfer to the deliverer.
+                    </S.TextParagraphBold>  */}
+                    <S.TextParagraph>
+                    Whether it be groceries, picking up prescriptions or any other errand, please do not hesitate to reach out; we will be more than happy to help! 
+                    </S.TextParagraph>
+                    <S.TextParagraphBold>
+                    Call or text the number below with a description of the errand you need. We will coordinate an estimated delivery time with a deliverer and notify you as soon as we can. If payment is needed (ex. groceries), this can be made via cash or e-transfer to the deliverer. 
+                    </S.TextParagraphBold>
+                    
                 </S.Text>
-
-                <S.Title>
-                    Hours of Operation
-                </S.Title>
-                <S.Text>
-                    <S.TextParagraph>
-                        We are open <b>10am - 5pm</b>, every day of the week.
-                    </S.TextParagraph>
-                    <S.TextParagraph>
-                    If you have a request outside these hours, please leave a voicemail and we will get back to you the next day.
-                    </S.TextParagraph>
-                </S.Text>
+                <S.PhoneContainer as="a" href="tel:250-819-3712">
+                    <S.Contact>
+                        (250) 819 - 3712
+                    </S.Contact>
+                </S.PhoneContainer>
 
                 <S.SloganContainer>
                     <S.Slogan src="https://user-images.githubusercontent.com/46095809/77281747-24ad2a80-6c85-11ea-9cd1-52aa728c3fe6.png" />
                 </S.SloganContainer>
-                    
+
             </S.Content>
             
         </S.page>
@@ -193,4 +187,4 @@ const InfoPage = () => {
     
 };
 
-export default InfoPage;
+export default KHomePage;

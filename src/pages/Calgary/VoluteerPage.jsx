@@ -9,6 +9,7 @@ S.page = styled.div`
     width: 100%;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 `;
 
 S.SmallLogo = styled.img` 
@@ -68,17 +69,39 @@ S.Content = styled.div`
     overflow: scroll;
 `;
 
+S.Title = styled.div`
+    
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: calc(15px + 0.8vmax);
+    color: #0003FF;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+`;
+
 S.Text = styled.div`
     display: block;
 
     font-family: Poppins;
     font-size: calc(12px + 0.3vmax);
     color: #000000;
-    // text-align: center;
+    text-align: center;
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 2%;
     margin-bottom: 2%;
+`;
+
+
+S.TextParagraph = styled.p`
+    font-weight: 300;
+`;
+
+S.TextParagraphBold = styled.p`
+    font-weight: 600;
 `;
 
 S.Contact = styled.div`
@@ -88,21 +111,11 @@ S.Contact = styled.div`
     font-size: 1.5em;
     color: #0003FF;
     text-align: center;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 1%;
-    margin-bottom: 2%;
-
+    // margin-left: 25%;
+    // margin-right: 25%;
+    margin-top: 2%;
+    margin-bottom: 1%;
 `;
-
-S.TextParagraph = styled.p`
-    font-weight: 200;
-`;
-
-S.TextParagraphBold = styled.p`
-    font-weight: 800;
-`;
-
 
 S.Slogan = styled.img`
     height: 6vh;
@@ -123,11 +136,12 @@ S.SloganContainer = styled.div`
     background: #FFFFFF;
 `;
 
-S.PhoneContainer = styled.div`
-    text-decoration: none;
+S.WhiteSpace = styled.div`
+    background: #FFFFFF;
+    color: #FFFFFF;
 `;
 
-const HomePage = () => {
+const CVolunteerPage = () => {
     
     return (
         <S.page>
@@ -138,46 +152,46 @@ const HomePage = () => {
                     />
                 </S.SmallLogoContainer>
                 <S.Nav>
-                    <S.NavItem as="a" href="/home">Home</S.NavItem>
-                    <S.NavItem as="a" href="/info">How It Works</S.NavItem>
-                    <S.NavItem as="a" href="/about">About Us</S.NavItem>
-                    <S.NavItem as="a" href="/volunteer">Volunteer</S.NavItem>
+                    <S.NavItem as="a" href="/calgary/home">Home</S.NavItem>
+                    <S.NavItem as="a" href="/calgary/info">How It Works</S.NavItem>
+                    <S.NavItem as="a" href="/calgary/about">About Us</S.NavItem>
+                    <S.NavItem as="a" href="/calgary/volunteer">Volunteer</S.NavItem>
                 </S.Nav>
             </S.Top>
+
             <S.Content>
+                <S.Title>
+                    Volunteer
+                </S.Title>
                 <S.Text>
-                    <S.TextParagraph>
-                    Hello, welcome to Helpful Neighbor!
-                    </S.TextParagraph>
-                    <S.TextParagraph>
-                    We are a community of young people wanting to lend a helping hand in our community during these tough times of the COVID-19 pandemic.     
-                    </S.TextParagraph>
-                    <S.TextParagraph>
-                    We want to offer our volunteer services to those in need - especially the senior community, those with underlying conditions, or anyone who may not feel comfortable leaving their home at this time. 
-                    </S.TextParagraph>
-                    {/* <S.TextParagraph>
-                    Whether it be delivering groceries or any other errand, please do not hesitate to give us a call; we will be more than happy to help!                        
-                    </S.TextParagraph> */}
-                    {/* <S.TextParagraphBold> 
-                        Call or text the type of delivery (e.g. grocery, pharmacy), address and any other details, and we will respond with an estimated time of delivery. Receipts will be delivered and payments can be made in cash/cheque/e-transfer to the deliverer.
-                    </S.TextParagraphBold>  */}
-                    <S.TextParagraph>
-                    Whether it be groceries, picking up prescriptions or any other errand, please do not hesitate to reach out; we will be more than happy to help! 
-                    </S.TextParagraph>
                     <S.TextParagraphBold>
-                    Call or text the number below with a description of the errand you need. We will coordinate an estimated delivery time with a deliverer and notify you as soon as we can. If payment is needed (ex. groceries), this can be made via cash or e-transfer to the deliverer. 
+                        Want to help out? 
                     </S.TextParagraphBold>
-                    
+                    <S.TextParagraph>
+                        Please send us an email, and we will reach out with more information!
+                    </S.TextParagraph>
                 </S.Text>
-                <S.PhoneContainer as="a" href="tel:250-819-3712">
-                    <S.Contact>
-                        (250) 819 - 3712
-                    </S.Contact>
-                </S.PhoneContainer>
+                <S.Contact as="a" href="mailto:hnkamloops@gmail.com">
+                    hnkamloops@gmail.com
+                </S.Contact>
 
                 <S.SloganContainer>
                     <S.Slogan src="https://user-images.githubusercontent.com/46095809/77281747-24ad2a80-6c85-11ea-9cd1-52aa728c3fe6.png" />
                 </S.SloganContainer>
+
+                <S.Text>
+                    <S.WhiteSpace>
+                        <S.TextParagraph>
+                            Please send us an email, and we will reach out with more information!
+                        </S.TextParagraph>
+                        <S.TextParagraph>
+                            Please send us an email, and we will reach out with more information!
+                        </S.TextParagraph>
+                        <S.TextParagraph>
+                            Please send us an email, and we will reach out with more information!
+                        </S.TextParagraph>   
+                    </S.WhiteSpace>
+                </S.Text>
 
             </S.Content>
             
@@ -187,4 +201,4 @@ const HomePage = () => {
     
 };
 
-export default HomePage;
+export default CVolunteerPage;

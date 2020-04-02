@@ -69,18 +69,6 @@ S.Content = styled.div`
     overflow: scroll;
 `;
 
-S.AboutImage = styled.img`
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-`;
-
-S.AboutImageContainer = styled.div`
-    display: block;
-    margin-top: 2%;
-    margin-bottom: 2%;
-`;
-
 S.Title = styled.div`
     
     font-family: Poppins;
@@ -111,8 +99,21 @@ S.TextParagraph = styled.p`
     font-weight: 300;
 `;
 
-S.TextParagraphCenter = styled.p`
+S.TextParagraphBold = styled.p`
+    font-weight: 600;
+`;
+
+S.Contact = styled.div`
+    
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #0003FF;
     text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
+    margin-bottom: 1%;
 `;
 
 S.Slogan = styled.img`
@@ -134,7 +135,7 @@ S.SloganContainer = styled.div`
     background: #FFFFFF;
 `;
 
-const AboutPage = () => {
+const CInfoPage = () => {
     
     return (
         <S.page>
@@ -145,58 +146,45 @@ const AboutPage = () => {
                     />
                 </S.SmallLogoContainer>
                 <S.Nav>
-                    <S.NavItem as="a" href="/home">Home</S.NavItem>
-                    <S.NavItem as="a" href="/info">How It Works</S.NavItem>
-                    <S.NavItem as="a" href="/about">About Us</S.NavItem>
-                    <S.NavItem as="a" href="/volunteer">Volunteer</S.NavItem>
+                    <S.NavItem as="a" href="/calgary/home">Home</S.NavItem>
+                    <S.NavItem as="a" href="/calgary/info">How It Works</S.NavItem>
+                    <S.NavItem as="a" href="/calgary/about">About Us</S.NavItem>
+                    <S.NavItem as="a" href="/calgary/volunteer">Volunteer</S.NavItem>
                 </S.Nav>
             </S.Top>
 
             <S.Content>
-
                 <S.Title>
-                    About Us
+                    How It Works
                 </S.Title>
                 <S.Text>
                     <S.TextParagraph>
-                        Helpful Neighbor was started by two university students, James and Young. With classes postponed and the city in a state of emergency, we wanted to find a useful way to volunteer our time and energy.  
+                        Give us a call or text at <b>250-819-3712</b> with your name, address, and order. We will connect you to a driver who will coordinate the time of delivery with you.
                     </S.TextParagraph>
-                      
+                    <S.TextParagraph>
+                        Once the driver has purchased your order, they will notify you of the total cost. Please e-transfer the amount to <b>hnkamloops@gmail.com</b>
+                    </S.TextParagraph>
+                    <S.TextParagraph>
+                        Following confirmation that the transaction is complete, the driver will deliver your order!
+                    </S.TextParagraph> 
                 </S.Text>
 
-                <S.AboutImageContainer>
-                    <S.AboutImage src="https://user-images.githubusercontent.com/46095808/77294701-f5f17d00-6ca1-11ea-988c-69ffe2ea98c3.jpg" />
-                </S.AboutImageContainer>
-
                 <S.Title>
-                    Media
+                    Hours of Operation
                 </S.Title>
                 <S.Text>
-                    <S.TextParagraphCenter>
-                        Check us out on the media!
-                    </S.TextParagraphCenter>
                     <S.TextParagraph>
-                        <b>CFJC Today</b> <i>March 30, 2020</i> :
+                        We are open <b>10am - 5pm</b>, every day of the week.
                     </S.TextParagraph>
                     <S.TextParagraph>
-                        <a href="https://cfjctoday.com/2020/03/30/pair-of-university-students-from-kamloops-here-to-help-during-pandemic/?fbclid=IwAR3Om0Oq8LMWreH5OBDxPKw-iI0bBJgC9NCDVq0fDe_tWGMKwCNP31xLl1I">
-                            Pair of university students from Kamloops here to help during pandemic
-                        </a>
-                    </S.TextParagraph>
-                    <S.TextParagraph>
-                        <b>Kamloops Matters</b> <i>March 29, 2020</i> :
-                    </S.TextParagraph>
-                    <S.TextParagraph>
-                        <a href="https://www.castanetkamloops.net/edition/news-story-295793-48-.htm?fbclid=IwAR0PcRtuLt3QZVxGiHSgGoUTcl9hZjzCjBrskGAdWK1484BJMMhyvGZ3V_c#295793">
-                            Students create online platform to help their Kamloops neighbours
-                        </a>
+                    If you have a request outside these hours, please leave a voicemail and we will get back to you the next day.
                     </S.TextParagraph>
                 </S.Text>
 
                 <S.SloganContainer>
                     <S.Slogan src="https://user-images.githubusercontent.com/46095809/77281747-24ad2a80-6c85-11ea-9cd1-52aa728c3fe6.png" />
                 </S.SloganContainer>
-
+                    
             </S.Content>
             
         </S.page>
@@ -205,4 +193,4 @@ const AboutPage = () => {
     
 };
 
-export default AboutPage;
+export default CInfoPage;
