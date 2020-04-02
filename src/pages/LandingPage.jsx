@@ -14,7 +14,7 @@ S.page = styled.div`
 
 S.Logo = styled.img` 
     // position: fixed;
-    height: 70vmin;
+    height: 60vmin;
     width; auto;
    
 `;
@@ -59,7 +59,7 @@ S.ButtonContainer = styled.div`
 S.Select = styled.div`
     display: flex;
     flex-direction: row;
-    margin-bottom: 10vmax;
+    margin-bottom: 3vmax;
 `;
 
 

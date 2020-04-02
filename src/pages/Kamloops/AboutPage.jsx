@@ -161,7 +161,18 @@ const KAboutPage = () => {
                     <S.TextParagraph>
                         Helpful Neighbor was started by two university students, James and Young. With classes postponed and the city in a state of emergency, we wanted to find a useful way to volunteer our time and energy.  
                     </S.TextParagraph>
-                      
+                    <S.TextParagraph>
+                        When Jordan and Liam joined the team, we decided to expand our operations to Calgary, AB. Since then, we have accumulated a wide range of customers and volunteers in both cities as well as a strong support network of media organizations and businesses.
+                    </S.TextParagraph>
+                    <S.TextParagraph>
+                        If you are interested in organizing a Helpful Neighbor branch in your area, please do not hesitate to reach out to us at <a href="mailto:hnkamloops@gmail.com">hnkamloops@gmail.com</a>.
+                    </S.TextParagraph> 
+                </S.Text>
+
+                <S.Text>
+                    <S.TextParagraph>
+                        <b>Kamloops Chapter</b>: James Bates and Young Seo
+                    </S.TextParagraph>
                 </S.Text>
 
                 <S.AboutImageContainer>
@@ -176,7 +187,7 @@ const KAboutPage = () => {
                         Check us out on the media!
                     </S.TextParagraphCenter>
                     <S.TextParagraph>
-                        <b>CFJC Today</b> <i>March 30, 2020</i> :
+                        <b>CFJC Today Kamloops</b> <i>March 30, 2020</i> :
                     </S.TextParagraph>
                     <S.TextParagraph>
                         <a href="https://cfjctoday.com/2020/03/30/pair-of-university-students-from-kamloops-here-to-help-during-pandemic/?fbclid=IwAR3Om0Oq8LMWreH5OBDxPKw-iI0bBJgC9NCDVq0fDe_tWGMKwCNP31xLl1I">
