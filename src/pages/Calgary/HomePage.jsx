@@ -127,6 +127,45 @@ S.PhoneContainer = styled.div`
     text-decoration: none;
 `;
 
+S.Button = styled.button`
+    
+    height: calc(50px + 0.8vh);
+    // width: calc(150px + 4vw);
+    width: calc(400px + 4vw);
+    // padding: 1.2vmax;
+
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: calc(15px + 0.8vw);
+    color: #0003FF;
+    text-align: center;
+    background-color: white;
+    //border-color: #0003FF;
+    //border-color: black;
+    //border-width: thin;
+    //border-radius: 15px;
+    border: none;
+    outline: none;
+    text-decoration: underline;
+
+    &:hover {
+        //color: #0003FF;
+        transform: scale(1.05);
+    }
+`;
+
+S.ButtonContainer = styled.div`
+    margin: 2vw;
+`;
+
+S.Select = styled.div`
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3vmax;
+
+    justify-content: center;
+`;
+
 const CHomePage = () => {
     
     return (
@@ -165,15 +204,16 @@ const CHomePage = () => {
                     Whether it be groceries, picking up prescriptions or any other errand, please do not hesitate to reach out; we will be more than happy to help! 
                     </S.TextParagraph>
                     <S.TextParagraphBold>
-                    Call or text the number below with a description of the errand you need. We will coordinate an estimated delivery time with a deliverer and notify you as soon as we can. If payment is needed (ex. groceries), this can be made via cash or e-transfer to the deliverer. 
+                    Fill out the form below with a description of the errand you need. We will coordinate an estimated delivery time with a deliverer and notify you as soon as we can. If payment is needed (ex. groceries), this can be made via cash or e-transfer to the deliverer. 
                     </S.TextParagraphBold>
                     
                 </S.Text>
-                <S.PhoneContainer as="a" href="tel:250-819-3712">
-                    <S.Contact>
-                        (250) 819 - 3712
-                    </S.Contact>
-                </S.PhoneContainer>
+
+                <S.Select>
+                    <S.ButtonContainer as="a" href="https://forms.gle/2ybTGHR6Z7nBK4rdA" target="_blank">
+                        <S.Button>Click Here to Request a Delivery</S.Button>           
+                    </S.ButtonContainer>
+                </S.Select>
 
                 <S.SloganContainer>
                     <S.Slogan src="https://user-images.githubusercontent.com/46095809/77281747-24ad2a80-6c85-11ea-9cd1-52aa728c3fe6.png" />

@@ -159,7 +159,7 @@ const KInfoPage = () => {
                 </S.Title>
                 <S.Text>
                     <S.TextParagraph>
-                        Give us a call or text at <b>250-819-3712</b> with your name, address, and order. We will connect you to a driver who will coordinate the time of delivery with you.
+                        Fill out the <a href="https://forms.gle/2ybTGHR6Z7nBK4rdA" target="_blank">form</a> with your information and order. We will connect you to a driver who will coordinate the time of delivery with you.
                     </S.TextParagraph>
                     <S.TextParagraph>
                         Once the driver has purchased your order, they will notify you of the total cost. Please e-transfer the amount to <b>hnkamloops@gmail.com</b>
@@ -177,7 +177,7 @@ const KInfoPage = () => {
                         We are open <b>10am - 5pm</b>, every day of the week.
                     </S.TextParagraph>
                     <S.TextParagraph>
-                    If you have a request outside these hours, please leave a voicemail and we will get back to you the next day.
+                        If you have a request outside these hours, we will get back to you the next day.
                     </S.TextParagraph>
                 </S.Text>
 
