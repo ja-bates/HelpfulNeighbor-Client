@@ -107,7 +107,7 @@ S.TextParagraphBold = styled.p`
 S.Contact = styled.div`
     
     font-family: Poppins;
-    font-weight: 600;
+    font-weight: 300;
     font-size: 1.5em;
     color: #0003FF;
     text-align: center;
