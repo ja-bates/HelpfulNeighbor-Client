@@ -13,6 +13,7 @@ import CHomePage from './pages/Calgary/HomePage';
 import CInfoPage from './pages/Calgary/InfoPage';
 import CAboutPage from './pages/Calgary/AboutPage';
 import CVolunteerPage from './pages/Calgary/VoluteerPage';
+import CLoadingPage from './pages/Calgary/LoadingPage';
 
 
 class App extends Component {
@@ -36,6 +37,7 @@ class App extends Component {
           <Route path="/calgary/info" component={CInfoPage} />
           <Route path="/calgary/about" component={CAboutPage} />
           <Route path="/calgary/volunteer" component={CVolunteerPage} />
+          <Route path="/calgary" component={CLoadingPage} />
         </div>
         
       </Router>

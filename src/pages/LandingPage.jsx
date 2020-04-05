@@ -77,7 +77,7 @@ const LandingPage = () => {
                 <S.ButtonContainer as="a" href="/kamloops/home">
                     <S.Button>Kamloops ></S.Button>           
                 </S.ButtonContainer>
-                <S.ButtonContainer as="a" href="/calgary/home">
+                <S.ButtonContainer as="a" href="/calgary">
                     <S.Button>Calgary ></S.Button>           
                 </S.ButtonContainer>
             </S.Select>
