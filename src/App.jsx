@@ -37,7 +37,7 @@ class App extends Component {
           <Route path="/calgary/info" component={CInfoPage} />
           <Route path="/calgary/about" component={CAboutPage} />
           <Route path="/calgary/volunteer" component={CVolunteerPage} />
-          <Route path="/calgary" component={CLoadingPage} />
+          {/* <Route path="/calgary" component={CLoadingPage} /> */}
         </div>
         
       </Router>

@@ -171,8 +171,8 @@ const CVolunteerPage = () => {
                         Please send us an email, and we will reach out with more information!
                     </S.TextParagraph>
                 </S.Text>
-                <S.Contact as="a" href="mailto:hnkamloops@gmail.com">
-                    hnkamloops@gmail.com
+                <S.Contact as="a" href="mailto:calgaryhn@gmail.com">
+                calgaryhn@gmail.com
                 </S.Contact>
 
                 <S.SloganContainer>

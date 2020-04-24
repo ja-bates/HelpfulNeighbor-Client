@@ -159,10 +159,10 @@ const CInfoPage = () => {
                 </S.Title>
                 <S.Text>
                     <S.TextParagraph>
-                        Fill out the <a href="https://forms.gle/2ybTGHR6Z7nBK4rdA" target="_blank">form</a> with your information and order. We will connect you to a driver who will coordinate the time of delivery with you.
+                        Fill out the <a href="https://docs.google.com/forms/d/e/1FAIpQLScQxs76TehvHnXpYGELMiqgNF8G0qt8kNaXLJ2q_jCykfJh4g/viewform?vc=0&c=0&w=1" target="_blank">form</a> with your information and order. We will connect you to a driver who will coordinate the time of delivery with you.
                     </S.TextParagraph>
                     <S.TextParagraph>
-                        Once the driver has purchased your order, they will notify you of the total cost. Please e-transfer the amount to <b>hnkamloops@gmail.com</b>
+                        Once the driver has purchased your order, they will notify you of the total cost. Please e-transfer the amount to <b>calgaryhn@gmail.com</b>
                     </S.TextParagraph>
                     <S.TextParagraph>
                         Following confirmation that the transaction is complete, the driver will deliver your order!
@@ -174,7 +174,7 @@ const CInfoPage = () => {
                 </S.Title>
                 <S.Text>
                     <S.TextParagraph>
-                        We are open <b>10am - 5pm</b>, every day of the week.
+                        We are open <b>10am - 8pm</b>, every day of the week. Feel free to fill out an order online or give us a call.
                     </S.TextParagraph>
                     <S.TextParagraph>
                     If you have a request outside these hours, we will get back to you the next day.
