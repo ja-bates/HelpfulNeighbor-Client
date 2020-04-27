@@ -179,6 +179,16 @@ const CAboutPage = () => {
                     <S.AboutImage src="https://user-images.githubusercontent.com/46095808/77294701-f5f17d00-6ca1-11ea-988c-69ffe2ea98c3.jpg" />
                 </S.AboutImageContainer>
 
+                <S.Text>
+                    <S.TextParagraph>
+                        <b>Calgary Chapter</b>: Jordan Lalonde and Liam Burke
+                    </S.TextParagraph>
+                </S.Text>
+
+                <S.AboutImageContainer>
+                    <S.AboutImage src="https://user-images.githubusercontent.com/46095808/80409974-99741580-887e-11ea-84e3-c1f58513a634.png" />
+                </S.AboutImageContainer>
+
                 <S.Title>
                     Media
                 </S.Title>
@@ -186,8 +196,17 @@ const CAboutPage = () => {
                     <S.TextParagraphCenter>
                         Check us out on the media!
                     </S.TextParagraphCenter>
+
                     <S.TextParagraph>
-                        <b>CFJC Today Kamloops</b> <i>March 30, 2020</i> :
+                        <b>CFJC News</b> <i>April 7, 2020</i> :
+                    </S.TextParagraph>
+                    <S.TextParagraph>
+                        <a href="https://cfjctoday.com/2020/04/07/video-follow-the-helpful-neighbours-as-they-grocery-shop-for-others-during-the-pandemic/">
+                            VIDEO: Follow the Helpful Neighbours as they grocery shop for others during the pandemic
+                        </a>
+                    </S.TextParagraph>
+                    <S.TextParagraph>
+                        <b>Today Kamloops</b> <i>March 30, 2020</i> :
                     </S.TextParagraph>
                     <S.TextParagraph>
                         <a href="https://cfjctoday.com/2020/03/30/pair-of-university-students-from-kamloops-here-to-help-during-pandemic/?fbclid=IwAR3Om0Oq8LMWreH5OBDxPKw-iI0bBJgC9NCDVq0fDe_tWGMKwCNP31xLl1I">
