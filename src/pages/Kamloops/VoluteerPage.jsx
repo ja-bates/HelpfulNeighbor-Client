@@ -148,7 +148,7 @@ const KVolunteerPage = () => {
             <S.Top>
                 <S.SmallLogoContainer as="a" href="/">
                     <S.SmallLogo 
-                        src="https://user-images.githubusercontent.com/46095809/77265982-7640bf80-6c5b-11ea-8286-c3d85e85f33f.png" 
+                        src="https://user-images.githubusercontent.com/46095809/80445961-5cce0b80-88ca-11ea-93e1-322bc3a4f597.png" 
                     />
                 </S.SmallLogoContainer>
                 <S.Nav>

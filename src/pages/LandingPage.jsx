@@ -70,7 +70,7 @@ const LandingPage = () => {
     return (
         <S.page>
             <S.LogoContainer>
-                <S.Logo src="https://user-images.githubusercontent.com/46095809/77264774-51971880-6c58-11ea-854e-a432342d1075.png" />
+                <S.Logo src="https://user-images.githubusercontent.com/46095809/80445232-99006c80-88c8-11ea-96e8-e67fef5a2137.png" />
 
             </S.LogoContainer>
             <S.Select>

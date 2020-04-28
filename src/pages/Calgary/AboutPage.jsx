@@ -141,7 +141,7 @@ const CAboutPage = () => {
             <S.Top>
                 <S.SmallLogoContainer as="a" href="/">
                     <S.SmallLogo 
-                        src="https://user-images.githubusercontent.com/46095809/77265982-7640bf80-6c5b-11ea-8286-c3d85e85f33f.png" 
+                        src="https://user-images.githubusercontent.com/46095809/80445961-5cce0b80-88ca-11ea-93e1-322bc3a4f597.png" 
                     />
                 </S.SmallLogoContainer>
                 <S.Nav>
@@ -159,19 +159,19 @@ const CAboutPage = () => {
                 </S.Title>
                 <S.Text>
                     <S.TextParagraph>
-                        Helpful Neighbor was started by two university students, James and Young. With classes postponed and the city in a state of emergency, we wanted to find a useful way to volunteer our time and energy.  
+                        Helpful Neighbour was started by two university students, James and Young. With classes postponed and the city in a state of emergency, we wanted to find a useful way to volunteer our time and energy.  
                     </S.TextParagraph>
                     <S.TextParagraph>
                         When Jordan and Liam joined the team, we decided to expand our operations to Calgary, AB. Since then, we have accumulated a wide range of customers and volunteers in both cities as well as a strong support network of media organizations and businesses.
                     </S.TextParagraph>
                     <S.TextParagraph>
-                        If you are interested in organizing a Helpful Neighbor branch in your area, please do not hesitate to reach out to us at <a href="mailto:hnkamloops@gmail.com">hnkamloops@gmail.com</a>.
+                        If you are interested in organizing a Helpful Neighbour branch in your area, please do not hesitate to reach out to us at <a href="mailto:hnkamloops@gmail.com">hnkamloops@gmail.com</a>.
                     </S.TextParagraph>
                 </S.Text>
 
                 <S.Text>
                     <S.TextParagraph>
-                        <b>Kamloops Chapter</b>: James Bates and Young Seo
+                        <b>Kamloops Chapter</b>: Young Seo and James Bates
                     </S.TextParagraph>
                 </S.Text>
 
@@ -181,7 +181,7 @@ const CAboutPage = () => {
 
                 <S.Text>
                     <S.TextParagraph>
-                        <b>Calgary Chapter</b>: Jordan Lalonde and Liam Burke
+                        <b>Calgary Chapter</b>: Liam Burke and Jordan Lalonde
                     </S.TextParagraph>
                 </S.Text>
 
